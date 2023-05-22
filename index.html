@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Website-Forms</title>
+</head>
+<body>
+    
+    
+    <h1 id="title">Forms</h1>
+    
+    
+    <div class="main">
+        <form id="survey-form">
+            
+            <label id="name-label">
+                <p>Name</p>
+            </label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+            
+            <label id="email-label">
+                <p>Email</p>
+            </label>
+            <input id="email" type="email" name="email" placeholder="Enter your email" required>
+            <label id="password">
+                <p>Password</p>
+            </label>
+            <input id="email" type="password" name="password" placeholder="Enter your password" required>
+
+            <label id="password">
+                <p>Comfirm Password</p>
+            </label>
+            <input id="email" type="password" name="password" placeholder="Enter your password" required>
+
+            <!----we use type="number" and name="number" to prevent the user from typing only numbers and not alphabet, min="" and max="" is used to indicate the lowest number and highest number the user can go by---->
+            <label id="number-label">
+                <p>Age(optional)</p>
+            </label>
+            <input id="number" type="number" name="number" placeholder="Age" min="12" max="60" required>
+    
+            <!----we use the select option to choose from multiple categories of list from a dropdown lsit---->
+            <p>Your Nationality?</p>
+            <select name="" id="dropdown" required>
+                <!----always remember to add the 'value' attributes to your ---->
+                <option value="default">Select your country</option>
+                <option value="Student">America</option>
+                <option value="Full time job">Canada</option>
+                <option value="Full time learner">Ghana</option>
+                <option value="Prefer not to say">Nigeria</option>
+                <option value="Other">Togo</option>
+    
+    
+            </select>
+            <p required>Select your gender</p>
+            <input type="radio" name="exe" value="1">Male
+            <br>
+            <input type="radio" name="exe" value="2">Female
+            <br>
+            <input type="radio" name="exe" value="2">Other
+            <br>
+    
+
+            <label >
+                <input type="checkbox" checked="checked" name="sameadr" style="margin-top: 13px;"> Terms and Conditions
+            </label>
+    
+            <p>Any comments or suggestions?</p>
+            <textarea name="" id="comment" cols="30" rows="10" placeholder="Enter your comment here..."
+                spellcheck="false"></textarea>
+            <br><br>
+    
+            <button id="submit">Submit</button>
+        </form>
+    
+    </div>
+
+</body>
+</html>
